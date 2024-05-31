@@ -4,4 +4,4 @@
 ### Che aspetti ? corri a sceglierla !
 
 
-##### Lavoro svolto da Ghinelli 
+##### Lavoro svolto da Ghinelli e Bros
