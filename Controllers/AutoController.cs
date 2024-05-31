@@ -19,7 +19,7 @@ namespace ghinelli.johan._5h.Ecommerce.Controllers
         }
         
 
-        // GET: Auto
+  
         public async Task<IActionResult> Index()
         {
             return View(await _context.Auto.ToListAsync());
@@ -27,7 +27,6 @@ namespace ghinelli.johan._5h.Ecommerce.Controllers
 
 
 
-        // GET: Auto/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -45,7 +44,7 @@ namespace ghinelli.johan._5h.Ecommerce.Controllers
             return View(auto);
         }
 
-        // GET: Auto/Create
+      
         public IActionResult Create()
         {
             return View();
@@ -57,9 +56,7 @@ namespace ghinelli.johan._5h.Ecommerce.Controllers
         [HttpPost]
 
 
-        // POST: Auto/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Modello,Marca,Anno,Cilindrata,Prezzo,Chilometraggio,Image")] Auto auto)
@@ -73,7 +70,7 @@ namespace ghinelli.johan._5h.Ecommerce.Controllers
             return View(auto);
         }
 
-        // GET: Auto/Edit/5
+     
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -89,9 +86,7 @@ namespace ghinelli.johan._5h.Ecommerce.Controllers
             return View(auto);
         }
 
-        // POST: Auto/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id, [Bind("Id,Modello,Marca,Anno,Cilindrata,Prezzo,Chilometraggio,Image")] Auto auto)
@@ -124,7 +119,6 @@ namespace ghinelli.johan._5h.Ecommerce.Controllers
             return View(auto);
         }
 
-        // GET: Auto/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -142,7 +136,7 @@ namespace ghinelli.johan._5h.Ecommerce.Controllers
             return View(auto);
         }
 
-        // POST: Auto/Delete/5
+       
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int? id)
