@@ -6,4 +6,4 @@
 
 ##### Lavoro svolto da Ghinelli e Bros
 
-per modificare al database accedere al Login come admin Username = admin   pass= admin
+per modificare il database accedere al Login come admin Username = admin   pass= admin
